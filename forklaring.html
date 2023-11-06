@@ -5,6 +5,7 @@
     <title>Forklaring av ord og uttrykk</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="/Favicon.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,16 +45,35 @@
 
 <body>
 
-    <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-black w3-card">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
                 href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
             <a href="/index.html" class="w3-bar-item w3-button w3-padding-large">Hjem</a>
-            <!-- <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ting1</a>
-            <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ting2</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Ting3</a> -->
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">Hvordan styres Norge? <i
+                        class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/styre.html#1" class="w3-bar-item w3-button">Regjeringen</a>
+                    <a href="/styre.html#2" class="w3-bar-item w3-button">Stortinget</a>
+                    <a href="/styre.html#3" class="w3-bar-item w3-button">Domstolene</a>
+                    <a href="/styre.html#4" class="w3-bar-item w3-button">Mediene</a>
+                    <a href="/styre.html#5" class="w3-bar-item w3-button">Tanker rundt temaet</a>
+                </div>
+            </div>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">De politiske partiene <i
+                        class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/partiene.html#1" class="w3-bar-item w3-button">Høyresiden</a>
+                    <a href="/partiene.html#2" class="w3-bar-item w3-button">Venstresiden</a>
+                    <a href="/partiene.html#3" class="w3-bar-item w3-button">Sentrumspartiene</a>
+                    <a href="/partiene.html#4" class="w3-bar-item w3-button">MDG</a>
+                    <a href="/partiene.html#5" class="w3-bar-item w3-button">Rødgrønne Regjeringen</a>
+                    <a href="/partiene.html#6" class="w3-bar-item w3-button">Tanker rundt teamet</a>
+                </div>
+            </div>
             <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-padding-large w3-button" title="More">Forklaring av ord og uttrykk <i
                         class="fa fa-caret-down"></i></button>
@@ -66,42 +86,25 @@
                     <a href="#6" class="w3-bar-item w3-button">Opposisjon</a>
                     <a href="#7" class="w3-bar-item w3-button">Mindretallsregjering</a>
                     <a href="#8" class="w3-bar-item w3-button">Koalisjonsregjering</a>
-                    <a href="#10" class="w3-bar-item w3-button">Flertallsregjering</a>
-                    <a href="#11" class="w3-bar-item w3-button">Ideologi</a>
+                    <a href="#9" class="w3-bar-item w3-button">Flertallsregjering</a>
+                    <a href="#10" class="w3-bar-item w3-button">Ideologi</a>
                 </div>
             </div>
-            <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-padding-large w3-button" title="More">Hvordan styres Norge? <i
-                        class="fa fa-caret-down"></i></button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/styre.html" class="w3-bar-item w3-button">Regjeringen</a>
-                    <a href="/styre.html" class="w3-bar-item w3-button">Stortinget</a>
-                    <a href="/styre.html" class="w3-bar-item w3-button">Domstolene</a>
-                    <a href="/styre.html" class="w3-bar-item w3-button">Mediene</a>
-                    <a href="/styre.html" class="w3-bar-item w3-button">Tanker rundt temaet</a>
-                </div>
-            </div>
-            <div class="w3-dropdown-hover w3-hide-small">
-                <button class="w3-padding-large w3-button" title="More">De politiske partiene <i
-                        class="fa fa-caret-down"></i></button>
-                <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/partiene.html" class="w3-bar-item w3-button">Politiske partier</a>
-                    <a href="/partiene.html" class="w3-bar-item w3-button">Tanker rundt teamet</a>
-                </div>
-            </div>
+            <a href="/kilder.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Kilder</a>
         </div>
     </div>
 
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="/forklaring.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Forklaring av ord og
+        <a href="/forklaring.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Forklaring av
+            ord og
             uttrykk</a>
-        <a href="/styre.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Hvordan styres Norge?</a>
+        <a href="/styre.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Hvordan styres
+            Norge?</a>
         <a href="/partiene.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">De politiske
             partiene</a>
     </div>
 
-    <!-- Page content -->
     <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
         <div class="mySlides w3-display-container w3-center">
@@ -111,7 +114,7 @@
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
             <h2 class="w3-wide">Forklaring av ord og uttrykk</h2>
 
-            
+
 
             <p class="w3-opacity"><i>Her går vi gjennom noen sentral ord og uttrykk</i></p>
 
@@ -164,9 +167,9 @@
 
             <div id="6"></div>
 
-            
+
             <h4 class="w3-wide">Maktfordelingsprinsippet</h4>
-            
+
             <p class="w3-justify">
                 <strong>Maktfordelingsprinsippet</strong>, eller bare maktfordeling, er et politisk og juridisk
                 prinsipp
@@ -181,7 +184,7 @@
             </p>
 
             <div id="7"></div>
-
+            <h4 class="w3-wide">Opposisjon</h4>
             <p class="w3-justify">
                 <strong>Opposisjon</strong> er en betegnelse som i første rekke brukes om en gruppering i en
                 nasjonalforsamling eller annen besluttende forsamling som ikke støtter, men i varierende grad kan
@@ -189,7 +192,7 @@
             </p>
 
             <div id="8"></div>
-
+            <h4 class="w3-wide">Mindretallsregjering</h4>
             <p class="w3-justify">
                 En <strong>mindretallsregjering</strong> er en regjering der partiet eller partiene som danner
                 regjeringen har mindre enn
@@ -197,14 +200,14 @@
             </p>
 
             <div id="9"></div>
-
+            <h4 class="w3-wide">Koalisjonsregjering</h4>
             <p class="w3-justify">
                 <strong>Koalisjonsregjering</strong> er en regjering som er sammensatt av representanter fra to eller
                 flere politiske partier.
             </p>
 
             <div id="10"></div>
-
+            <h4 class="w3-wide">Flertallsregjering</h4>
             <p class="w3-justify">
                 En <strong>flertallsregjering</strong> er i Norge en regjering der partiet eller partiene som danner
                 regjeringen har mer enn halvparten av representantene på Stortinget. Regjeringspartiene har altså et
@@ -212,45 +215,21 @@
             </p>
 
             <div id="11"></div>
-
+            <h4 class="w3-wide">Ideologi</h4>
             <p class="w3-justify">
                 En <strong>ideologi</strong> er en ide eller ett tankesett om hvordan samfunnet skal styres, og hvilke
                 verdier som er viktige. Eksempler på slike ideologier er anarkisme, sosialisme, liberalisme,
                 konservatisme og fascisme.
             </p>
-
-            <!-- <div class="w3-row w3-padding-32">
-                <div class="w3-third">
-                    <p>Name</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
-                        style="width:60%">
-                </div>
-                <div class="w3-third">
-                    <p>Name</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name"
-                        style="width:60%">
-                </div>
-                <div class="w3-third">
-                    <p>Name</p>
-                    <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-                </div>
-            </div> -->
         </div>
-
-        <!-- End Page Content -->
     </div>
-
-    <!-- Image of location/map -->
-    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
-
-    <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
         <p class="w3-medium">Drevet av <a href="https://bigwin.cash/bigwin/" target="_blank">bigwin.cash</a>
         </p>
     </footer>
 
     <script>
-        // Automatic Slideshow - change image every 4 seconds
+
         var myIndex = 0;
         carousel();
 
@@ -266,7 +245,6 @@
             setTimeout(carousel, 4000);
         }
 
-        // Used to toggle the menu on small screens when clicking on the menu button
         function myFunction() {
             var x = document.getElementById("navDemo");
             if (x.className.indexOf("w3-show") == -1) {
@@ -276,7 +254,6 @@
             }
         }
 
-        // When the user clicks anywhere outside of the modal, close it
         var modal = document.getElementById('ticketModal');
         window.onclick = function (event) {
             if (event.target == modal) {
