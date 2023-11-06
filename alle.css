@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+<<<<<<< HEAD
 }
 
 .w3-wide {
@@ -30,4 +31,9 @@ h1{
     margin-top: 70px;
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: -20px;
+=======
+  }
+.w3-justify{
+  padding-bottom: 10%;
+>>>>>>> a695f31fe960a00add79e86343b30a7515aeec87
 }
