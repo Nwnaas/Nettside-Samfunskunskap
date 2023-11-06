@@ -1,3 +1,6 @@
 html {
     scroll-behavior: smooth;
   }
+.w3-justify{
+  padding-bottom: 10%;
+}
